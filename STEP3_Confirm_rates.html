@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>STEP3_Confirm_rates</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/theme_styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/service.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="css/rates.css">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+<div class="container_pms">
+  <div class="pms_progress step3"><!--变更step 实现效果-->
+    <ul class="roboto_slab">
+      <li class="pms_step1">Select PMS</li>
+      <li class="pms_step2">Content</li>
+      <li class="pms_step3">Confirm</li>
+      <li class="pms_step4">Test Book</li>
+      <li class="pms_step5">Go Live</li>
+    </ul>
+    <span class="line_progress"></span> <span class="line_bg"></span> </div>
+  <div class="title_stage">
+    <h2 class="title_h2 roboto_slab">Your Rooms &amp; Rates information has been imported too!</h2>
+  </div>
+  <div class="content_pms">
+    <ul class="confirm_steps roboto-slab">
+      <li><i class="tick"></i>Rooms</li>
+      <li class="on"><i class="tick_grey"></i>Rates</li>
+      <li><i class="tick_grey"></i>Restrictions</li>
+    </ul>
+    <p class="tip">Your Room information is now confirmed.Next, please check your rates.</p>
+    <div class="pms_rome_info">
+      <div class="tablebody table-detail clearfix"> 
+        <!-- date START-->
+        <div class="choose-dates">
+          <div class="switch clearfix"> <a class="btn prev-btn" href="javascript:void(0)" onclick="page(0)"> <img src="img/left-arrow-icon.png"> </a>
+            <div class="choose-day">
+              <div class="input-group date" id="selectDateDiv" data-date-format="yyyy-mm-dd">
+                <input type="text" class="form-control form-time avoid-check" size="16" id="datepickerDate" readonly value="12 Jul 2017" style="background:#FFFFFF;cursor: pointer;">
+                <span class="input-group-addon"> <img class="glyphicon glyphicon-calendar" src="img/cal.png"> </span> </div>
+            </div>
+            <a class="btn next-btn" href="javascript:void(0)" onclick="page(1)"> <img src="img/right-arrow-icon.png"> </a> </div>
+        </div>
+        <!-- date END-->
+        
+        <table class="table table-rooms clearfix" id="table">
+          <thead id="mythead">
+            <tr class="fixed">
+              <th class="first-text"><p class="rate-title">Rates</p>
+                <span id="spanTh" class="room-num">1</span></th>
+              <th class="boder_left">Person</th>
+              <th class="blue-color"><div class="outside"><span><cite>WED</cite><br>
+                  26</span></div></th>
+              <th class=""><div class="outside"><span><cite>THUR</cite><br>
+                  27</span></div></th>
+              <th class="blue-color"><div class="outside"><span><cite>FRI</cite><br>
+                  28</span></div></th>
+              <th class=""><div class="outside"><span><cite>SAT</cite><br>
+                  29</span></div></th>
+              <th class="blue-color"><div class="outside"><span><cite>SUN</cite><br>
+                  30</span></div></th>
+              <th class=""><div class="outside"><span><cite>MON</cite><br>
+                  31</span></div></th>
+              <th class="blue-color"><div class="outside"><span><cite>TUE</cite><br>
+                  01</span></div></th>
+              <th class=""><div class="outside"><span><cite>WED</cite><br>
+                  02</span></div></th>
+              <th class="blue-color"><div class="outside"><span><cite>THUR</cite><br>
+                  03</span></div></th>
+              <th class=""><div class="outside"><span><cite>FRI</cite><br>
+                  04</span></div></th>
+              <th class="blue-color"><div class="outside"><span><cite>SAT</cite><br>
+                  05</span></div></th>
+              <th class=""><div class="outside"><span><cite>SUN</cite><br>
+                  06</span></div></th>
+              <th class="blue-color"><div class="outside"><span><cite>MON</cite><br>
+                  07</span></div></th>
+              <th class=""><div class="outside"><span><cite>TUE</cite><br>
+                  08</span></div></th>
+            </tr>
+          </thead>
+          <tbody id="mytbody">
+            <tr id="r0" class="roomtype-list">
+              <td style="cursor: pointer;" class="first-text" onclick="toggleRow('r0')"><p class="left-title pull-left">Luxury Super Double</p>
+                <div class="right-option"><a id="r0_a" href="javascript:void(0)" class="rate-edit pull-right"><img src="img/up-arrow.png"></a></div></td>
+              <td class="boder_left" ></td>
+              <td date="2017/07/26" roomtypecode="RT01" class="roomRow blue-color">10</td>
+              <td date="2017/07/27" roomtypecode="RT01" class="roomRow">10</td>
+              <td date="2017/07/28" roomtypecode="RT01" class="roomRow blue-color">10</td>
+              <td date="2017/07/29" roomtypecode="RT01" class="roomRow">10</td>
+              <td date="2017/07/30" roomtypecode="RT01" class="roomRow blue-color">10</td>
+              <td date="2017/07/31" roomtypecode="RT01" class="roomRow">10</td>
+              <td date="2017/08/01" roomtypecode="RT01" class="roomRow blue-color">10</td>
+              <td date="2017/08/02" roomtypecode="RT01" class="roomRow">10</td>
+              <td date="2017/08/03" roomtypecode="RT01" class="roomRow blue-color">10</td>
+              <td date="2017/08/04" roomtypecode="RT01" class="roomRow">10</td>
+              <td date="2017/08/05" roomtypecode="RT01" class="roomRow blue-color">10</td>
+              <td date="2017/08/06" roomtypecode="RT01" class="roomRow">10</td>
+              <td date="2017/08/07" roomtypecode="RT01" class="roomRow blue-color">10</td>
+              <td date="2017/08/08" roomtypecode="RT01" class="roomRow">10</td>
+            </tr>
+            <tr id="r1_0" relatedrow="r0" style="display: table-row;">
+              <td class="first-text" rowspan="10" ><p class="left-title left-ratename pull-left"><cite class="master">Master</cite><span>Rate Name </span></p></td>
+               <td class="boder_left" ><i class="person_icon person1"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person2"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person3"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person4"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person5"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person6"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person7"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person8"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person9"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+            <tr  relatedrow="r0" style="display: table-row;">
+               <td class="boder_left" ><i class="person_icon person10"></i></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+       
+             <tr id="r1_1" relatedrow="r0" style="display: table-row;">
+              <td class="first-text"><p class="left-title left-ratename pull-left"><span>Including Breakfast </span></p></td>
+               <td class="boder_left" ></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class=" blue-color" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" maxaudlts="2" priceindex="0" orival="12" class="" tabindex="1" style="cursor: pointer;"><span style="font-family: Arial,Helvetica,sans-serif">$</span>12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button class="gbtn">Confirm Rates</button>
+  </div>
+  <div class="btn_area">
+    <p class="paragraph_1  s1_info">Any issues? <a class="text_link">Contact Support</a></p>
+  </div>
+</div>
+</body>
+</html>

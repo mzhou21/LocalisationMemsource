@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>STEP4_Test_booking</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/theme_styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/service.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="css/time_css.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/time_js.js"></script>
+</head>
+
+<body>
+<div class="container_pms">
+  <div class="pms_progress step4"><!--变更step 实现效果-->
+    <ul class="roboto_slab">
+      <li class="pms_step1">Select PMS</li>
+      <li class="pms_step2">Content</li>
+      <li class="pms_step3">Confirm</li>
+      <li class="pms_step4">Test Book</li>
+      <li class="pms_step5">Go Live</li>
+    </ul>
+    <span class="line_progress"></span> <span class="line_bg"></span> </div>
+  <div class="title_stage">
+    <h2 class="title_h2 roboto_slab">Before your hotel goes live, let's test the booking!</h2>
+  </div>
+  <div class="content_pms">
+    <ul class="confirm_steps test_steps roboto-slab">
+      <li class="on"><i class="tick_grey"></i>Test Booking</li>
+      <li><i class="tick_grey"></i>Test Cancellation</li>
+    </ul>
+    <p class="paragraph_1 s1_info">One is sending a dummy booking to Mews. <br />Please log on your account in Mews to see if you see this booking.</p>
+    <div class="pms_form">
+      <p class="tip">Your PMS may take up to 5 minutes to receive this booking.</p>
+      
+      <!--5分钟后未操作显示此提示
+        <p class="tip tip_warning">If you haven't received test booking in your PMS, please Contact Support from the bottom of this page.<br /><br />Or, <a class="text_link">try again.</a></p>--> 
+      
+      <!--选错Guest Name 显示此提示
+        <p class="tip tip_error">Incorrect Guest Name. Please try again!</p>-->
+      
+      <div class="countdown">
+        <div class="game_time">
+          <div class="hold">
+            <div class="pie pie1" ></div>
+          </div>
+          <div class="hold">
+            <div class="pie pie2" ></div>
+          </div>
+          <div class="bg"> </div>
+          <span class="time_tip">Time Remaining</span>
+          <div class="time"> 00:00</div>
+        </div>
+        <script type="text/javascript">
+countDown();
+</script> 
+      </div>
+      <div class="booking_info"> <span class="booking_info_title">Booking infomation:</span>
+        <table>
+          <tbody>
+            <tr>
+              <td class="booking_info_class">Booking ID</td>
+              <td>#12345678</td>
+            </tr>
+            <tr>
+              <td class="booking_info_class">Check in</td>
+              <td>2017-07-07</td>
+            </tr>
+            <tr>
+              <td class="booking_info_class">Check out</td>
+              <td>2017-07-17</td>
+            </tr>
+            <tr>
+              <td class="booking_info_class">Adults</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="booking_info_class">Room</td>
+              <td>Luxury Super Double</td>
+            </tr>
+            <tr>
+              <td class="booking_info_class">Rate</td>
+              <td>Rate Name</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="booking_info"> <span class="booking_info_title">Please select the correct Guest Name to confirm the booking:</span>
+        <div class="hotel_list">
+          <ul>
+            <li><i class="pms_radio "></i>
+              <label> Eric Yu</label>
+            </li>
+            <li><i class="pms_radio "></i>
+              <label> Mengchen Zhou</label>
+            </li>
+            <li><i class="pms_radio checked"></i>
+              <label> Hedy Hu</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="gbtn ">Submit</button>
+    </div>
+  </div>
+  <div class="btn_area">
+    <p class="paragraph_1  s1_info">Any issues? <a class="text_link">Contact Support</a></p>
+  </div>
+</div>
+</body>
+</html>

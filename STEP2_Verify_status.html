@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>STEP2_Verify_status</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/theme_styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/service.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+<div class="container_pms">
+  <div class="pms_progress step2"><!--变更step 实现效果-->
+    <ul class="roboto_slab">
+      <li class="pms_step1">Select PMS</li>
+      <li class="pms_step2">Content</li>
+      <li class="pms_step3">Confirm</li>
+      <li class="pms_step4">Test Book</li>
+      <li class="pms_step5">Go Live</li>
+    </ul>
+   <span class="line_progress"></span>
+   <span class="line_bg"></span>
+  </div>
+  <div class="title_stage">
+    <h2 class="title_h2 roboto_slab">Now, let's login the PMS System to connect</h2>
+  </div>
+  <div class="content_pms">
+    <div class="pmslogo"><img src="img/mewslogo.png" /></div>
+      <div class="sdit-info-form">
+      <div class="pms_form">
+      <p class="tip">Please fill in information from your PMS to connect</p>
+        <section>
+          <label class="reg-name control-label">Your email registed for PMS:</label>
+          <br>
+          <div class="btn-group bootstrap-select form-control language open">
+            <input placeholder="Email" class="form-control checkRequire">
+          </div>
+		  </section>
+      </div>
+      <button class="gbtn disable_btn">Verify</button>
+    </div>
+  </div>
+  
+  <div class="content_pms">
+    <div class="pmslogo"><img src="img/mewslogo.png" /></div>
+      <div class="sdit-info-form">
+      <div class="pms_form">
+      <p class="tip tip_success">Successfully verified! Please select the hotel you would like to connect</p>
+        <section class="has-success"><!--input正确填入-->
+          <label class="reg-name control-label">Your email registed for PMS:</label>
+          <br>
+          <div class="btn-group bootstrap-select form-control language open">
+            <input placeholder="Email" value="Chris.xu@derbysoft.com" class="form-control checkRequire">
+          </div>
+		  </section>
+      </div>
+      <button class="gbtn gbtn_verified"><span class="v01">Verified</span> <span class="s02">Switch account</span></button>
+      
+      <div class="pms_form">
+      <div class="hotel_list">
+              <ul>
+                <li><i class="pms_radio "></i>
+                  <label> Hotel Paradiso Grando Maximo</label>
+                </li>
+                <li><i class="pms_radio "></i>
+                  <label> Hotel Paradiso Grando Maximo</label>
+                </li>
+                <li><i class="pms_radio checked"></i>
+                  <label> Hotel Paradiso Grando Maximo</label>
+                </li>
+                <li><i class="pms_radio "></i>
+                  <label> Easter Special</label>
+                </li>
+              </ul>
+		  </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content_pms">
+    <div class="pmslogo"><img src="img/mewslogo.png" /></div>
+      <div class="sdit-info-form">
+      <div class="pms_form">
+      <p class="tip tip_error">Please enter a valid email address</p>
+        <section class="has-error"><!--input填入错误-->
+          <label class="reg-name control-label">Your email registed for PMS:</label>
+          <br>
+          <div class="btn-group bootstrap-select form-control language open">
+            <input placeholder="Email" class="form-control checkRequire">
+          </div>
+		  </section>
+      </div>
+      <button class="gbtn disable_btn">Verify</button>
+    </div>
+  </div>
+  
+  <div class="btn_area">
+    <button class="pbtn disable_btn">Continue</button>
+    <p class="paragraph_1  s1_info">Any issues? <a class="text_link">Contact Support</a></p>
+    <span class="back_btn text_link">Back</span> </div>
+</div>
+</body>
+</html>

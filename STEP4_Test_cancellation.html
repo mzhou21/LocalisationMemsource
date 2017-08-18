@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>STEP4_Test_cancellation</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/theme_styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/service.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="css/time_css.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/time_js.js"></script>
+</head>
+
+<body>
+<div class="container_pms">
+  <div class="pms_progress step4"><!--变更step 实现效果-->
+    <ul class="roboto_slab">
+      <li class="pms_step1">Select PMS</li>
+      <li class="pms_step2">Content</li>
+      <li class="pms_step3">Confirm</li>
+      <li class="pms_step4">Test Book</li>
+      <li class="pms_step5">Go Live</li>
+    </ul>
+   <span class="line_progress"></span>
+   <span class="line_bg"></span>
+  </div>
+  <div class="title_stage">
+    <h2 class="title_h2 roboto_slab">Before your hotel goes live, let's test the booking!</h2>
+  </div>
+  <div class="content_pms">
+  <ul class="confirm_steps test_steps roboto-slab">
+      <li><i class="tick"></i>Test Booking</li>
+      <li class="on"><i class="tick_grey"></i>Test Cancellation</li>
+    </ul>
+   <p class="paragraph_1 s1_info">One is cancelling the dummy booking on Mews. <br />Please log on your account in Mews to see if you see this booking cancelled.</p>
+   <div class="pms_form">
+         
+      <div class="countdown">
+        <div class="game_time">
+          <div class="hold">
+            <div class="pie pie1" ></div>
+          </div>
+          <div class="hold">
+            <div class="pie pie2" ></div>
+          </div>
+          <div class="bg"> </div>
+          <span class="time_tip">Time Remaining</span>
+          <div class="time"> 00:00</div>
+        </div>
+        <script type="text/javascript">
+countDown();
+</script> 
+      </div>
+        
+        <div class="booking_info">
+        	<span class="booking_info_title">Booking infomation:</span>
+        	<table>
+        		<tbody>
+        			<tr>
+        				<td class="booking_info_class">Booking ID</td>
+        				<td>#12345678</td>
+        			</tr>
+        			<tr>
+        				<td class="booking_info_class">Guest name</td>
+        				<td>Eric Yu</td>
+        			</tr>
+        			<tr>
+        				<td class="booking_info_class">Check in</td>
+        				<td>2017-07-07</td>
+        			</tr>
+        			<tr>
+        				<td class="booking_info_class">Check out</td>
+        				<td>2017-07-17</td>
+        			</tr>
+        			<tr>
+        				<td class="booking_info_class">Adults</td>
+        				<td>2</td>
+        			</tr><tr>
+        				<td class="booking_info_class">Room</td>
+        				<td>Luxury Super Double</td>
+        			</tr>
+        			<tr>
+        				<td class="booking_info_class">Rate</td>
+        				<td>Rate Name</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </div>
+        
+         <h2 class="title_h2 roboto_sla booking_title">Is the booking cancelled in PMS?</h2>
+     
+     <button class="gbtn ">Yes, got it!</button>
+      </div>
+  </div>
+  
+
+  <div class="btn_area">
+    <p class="paragraph_1  s1_info">Any issues? <a class="text_link">Contact Support</a></p>
+    </div>
+</div>
+
+</body>
+</html>
+

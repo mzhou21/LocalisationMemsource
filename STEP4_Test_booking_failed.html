@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>STEP4_Test_booking_failed</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/theme_styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/service.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+<div class="container_pms">
+  <div class="pms_progress step4"><!--变更step 实现效果-->
+    <ul class="roboto_slab">
+      <li class="pms_step1">Select PMS</li>
+      <li class="pms_step2">Content</li>
+      <li class="pms_step3">Confirm</li>
+      <li class="pms_step4">Test Book</li>
+      <li class="pms_step5">Go Live</li>
+    </ul>
+   <span class="line_progress"></span>
+   <span class="line_bg"></span>
+  </div>
+  <div class="title_stage">
+    <h2 class="title_h2 roboto_slab"> </h2>
+  </div>
+  <div class="content_pms">
+  <ul class="confirm_steps test_steps roboto-slab">
+      <li class="on"><i class="tick_grey"></i>Test Booking</li>
+      <li><i class="tick_grey"></i>Test Cancellation</li>
+    </ul>
+   <div class="pms_form">
+         
+         <p class="tip tip_error">
+Unable to send test booking because there are no room available.<br />
+You can skip this step to complete setting up One. And contact support to send test booking after Rooms &amp; Rate are adjusted later.</p>
+        
+        <!--订单失败 显示此提示
+        <p class="tip tip_error">
+Failed to send test booking.<br />
+You can skip this step to complete setting up One. And contact support to manually send test booking later.</p>-->
+
+
+     <button class="gbtn ">Skip</button>
+      </div>
+  </div>
+  
+
+  <div class="btn_area">
+    <p class="paragraph_1  s1_info">Any issues? <a class="text_link">Contact Support</a></p>
+    </div>
+</div>
+
+</body>
+</html>
+

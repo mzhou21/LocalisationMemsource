@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>STEP3_Confirm_restrictions</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/theme_styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/service.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="css/rates.css">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+<div class="container_pms">
+  <div class="pms_progress step3"><!--变更step 实现效果-->
+    <ul class="roboto_slab">
+      <li class="pms_step1">Select PMS</li>
+      <li class="pms_step2">Content</li>
+      <li class="pms_step3">Confirm</li>
+      <li class="pms_step4">Test Book</li>
+      <li class="pms_step5">Go Live</li>
+    </ul>
+    <span class="line_progress"></span> <span class="line_bg"></span> </div>
+  <div class="title_stage">
+    <h2 class="title_h2 roboto_slab">Your Rooms &amp; Rates information has been imported too!</h2>
+  </div>
+  <div class="content_pms">
+    <ul class="confirm_steps roboto-slab">
+      <li><i class="tick"></i>Rooms</li>
+      <li><i class="tick"></i>Rates</li>
+      <li class="on"><i class="tick_grey"></i>Restrictions</li>
+    </ul>
+    <p class="tip"> Your Rate information is now confirmed.
+Next, please check your restrictioins.</p>
+    <div class="pms_rome_info">
+      <div class="tablebody table-detail clearfix"> 
+        <!-- date START-->
+        <div class="choose-dates">
+          <div class="switch clearfix"> <a class="btn prev-btn" href="javascript:void(0)" onclick="page(0)"> <img src="img/left-arrow-icon.png"> </a>
+            <div class="choose-day">
+              <div class="input-group date" id="selectDateDiv" data-date-format="yyyy-mm-dd">
+                <input type="text" class="form-control form-time avoid-check" size="16" id="datepickerDate" readonly value="12 Jul 2017" style="background:#FFFFFF;cursor: pointer;">
+                <span class="input-group-addon"> <img class="glyphicon glyphicon-calendar" src="img/cal.png"> </span> </div>
+            </div>
+            <a class="btn next-btn" href="javascript:void(0)" onclick="page(1)"> <img src="img/right-arrow-icon.png"> </a> </div>
+        </div>
+        <!-- date END-->
+        
+        <ul class="table_tip"><li class="table_tip_close">Close</li><li class="table_tip_open">Open</li></ul>
+        <table class="room_table" id="table">
+          <thead id="mythead">
+            <tr>
+              <th width="289"></th>
+              <th class="even" width="62"><div class="day"><span><cite>WED</cite><br>
+                  26</span></div></th>
+              <th class="odd" width="61"><div class="day"><span><cite>THUR</cite><br>
+                  27</span></div></th>
+              <th class="even" width="62"><div class="day"><span><cite>FRI</cite><br>
+                  28</span></div></th>
+              <th class="odd" width="61"><div class="day"><span><cite>SAT</cite><br>
+                  29</span></div></th>
+              <th class="even" width="62"><div class="day"><span><cite>SUN</cite><br>
+                  30</span></div></th>
+              <th class="odd" width="61"><div class="day"><span><cite>MON</cite><br>
+                  31</span></div></th>
+              <th class="even" width="62"><div class="day"><span><cite>TUE</cite><br>
+                  01</span></div></th>
+              <th class="odd" width="61"><div class="day"><span><cite>WED</cite><br>
+                  02</span></div></th>
+              <th class="even" width="62"><div class="day"><span><cite>THUR</cite><br>
+                  03</span></div></th>
+              <th class="odd" width="61"><div class="day"><span><cite>FRI</cite><br>
+                  04</span></div></th>
+              <th class="even" width="62"><div class="day"><span><cite>SAT</cite><br>
+                  05</span></div></th>
+              <th class="odd" width="61"><div class="day"><span><cite>SUN</cite><br>
+                  06</span></div></th>
+              <th class="even" width="62"><div class="day"><span><cite>MON</cite><br>
+                  07</span></div></th>
+              <th class="odd" width="61"><div class="day"><span><cite>TUE</cite><br>
+                  08</span></div></th>
+            </tr>
+          </thead>
+          <tbody id="mytbody">
+            <tr id="propertyTr">
+              <td class="first-text"  width="289" onclick="toggleRow('propertyTr')"><div class="title2">
+                  <p class="name-max-width">Property</p>
+                  <span></span></div></td>
+              <td date="2017/07/26" cls="even" status="0" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close_even.png"></td>
+              <td date="2017/07/27" cls="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/07/28" cls="even" status="1" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/07/29" cls="" status="0" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close.png"></td>
+              <td date="2017/07/30" cls="even" status="1" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/07/31" cls="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/01" cls="even" status="1" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/02" cls="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/03" cls="even" status="1" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/04" cls="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/05" cls="even" status="1" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/06" cls="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/07" cls="even" status="1" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/08" cls="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+            </tr>
+            <tr>
+              <td class="first-text"><div class="title2">
+                  <p class="minimum-stay">Minimum stay</p>
+                </div></td>
+              <td date="2017/07/26" orival="" class="isMinimumStay isProperty blue-color" tabindex="1" ></td>
+              <td date="2017/07/27" orival="" class="isMinimumStay isProperty" tabindex="1" ></td>
+              <td date="2017/07/28" orival="" class="isMinimumStay isProperty blue-color" tabindex="1" ></td>
+              <td date="2017/07/29" orival="" class="isMinimumStay isProperty" tabindex="1" ></td>
+              <td date="2017/07/30" orival="" class="isMinimumStay isProperty blue-color" tabindex="1" ></td>
+              <td date="2017/07/31" orival="" class="isMinimumStay isProperty" tabindex="1" ></td>
+              <td date="2017/08/01" orival="" class="isMinimumStay isProperty blue-color" tabindex="1" ></td>
+              <td date="2017/08/02" orival="" class="isMinimumStay isProperty" tabindex="1" ></td>
+              <td date="2017/08/03" orival="" class="isMinimumStay isProperty blue-color" tabindex="1" ></td>
+              <td date="2017/08/04" orival="" class="isMinimumStay isProperty" tabindex="1" ></td>
+              <td date="2017/08/05" orival="" class="isMinimumStay isProperty blue-color" tabindex="1" ></td>
+              <td date="2017/08/06" orival="" class="isMinimumStay isProperty" tabindex="1" ></td>
+              <td date="2017/08/07" orival="" class="isMinimumStay isProperty blue-color" tabindex="1" ></td>
+              <td date="2017/08/08" orival="" class="isMinimumStay isProperty" tabindex="1" ></td>
+            </tr>
+            <tr id="r1" roomtypecode="RT01" rateplancode="">
+              <td  class="first-text" width="289" onclick="toggleRow('r1')"><div class="title3">
+                  <p class="name-max-width">Luxury Super Double</p>
+                  <span class=""></span></div></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="" status="0" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close_even.png"></td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="" status="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="" status="0" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close.png"></td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="" status="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="" status="0" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close_even.png"></td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="" status="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="" status="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="" status="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="" status="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+            </tr>
+            <tr id="r2" roomtypecode="RT01" rateplancode="RP01" relatedrow="r1" style="display: table-row;">
+              <td class="first-text" width="289"><div class="title4">
+                  <p class="name-max-width">Rate Name</p>
+                </div></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" status="0" roomstatus="0" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close_even.png"></td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" status="0" roomstatus="0" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close.png"></td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" status="0" roomstatus="0" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close_even.png"></td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" status="0" roomstatus="0" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/close.png"></td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="<img src='img/open_even.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open_even.png"></td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="<img src='img/open.png'></td>" oristatus="1" class="isSwitch" tabindex="1" ><img src="img/open.png"></td>
+            </tr>
+            <tr roomtypecode="RT01" rateplancode="RP01" relatedrow="r1" style="display: table-row;">
+              <td class="first-text" width="289"><div class="title4">
+                  <p class="minimum-stay">Minimum stay</p>
+                </div></td>
+              <td date="2017/07/26" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="1" oripropertyval="" class="isMinimumStay blue-color" tabindex="1" >1</td>
+              <td date="2017/07/27" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="1" oripropertyval="" class="isMinimumStay" tabindex="1" >1</td>
+              <td date="2017/07/28" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="1" oripropertyval="" class="isMinimumStay blue-color" tabindex="1" >1</td>
+              <td date="2017/07/29" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="1" oripropertyval="" class="isMinimumStay" tabindex="1" >1</td>
+              <td date="2017/07/30" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="1" oripropertyval="" class="isMinimumStay blue-color" tabindex="1" >1</td>
+              <td date="2017/07/31" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="1" oripropertyval="" class="isMinimumStay" tabindex="1" >1</td>
+              <td date="2017/08/01" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="1" oripropertyval="" class="isMinimumStay blue-color" tabindex="1" >1</td>
+              <td date="2017/08/02" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="1" oripropertyval="" class="isMinimumStay" tabindex="1" >1</td>
+              <td date="2017/08/03" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="1" oripropertyval="" class="isMinimumStay blue-color" tabindex="1" >1</td>
+              <td date="2017/08/04" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="1" oripropertyval="" class="isMinimumStay" tabindex="1" >1</td>
+              <td date="2017/08/05" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="1" oripropertyval="" class="isMinimumStay blue-color" tabindex="1" >1</td>
+              <td date="2017/08/06" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="1" oripropertyval="" class="isMinimumStay" tabindex="1" >1</td>
+              <td date="2017/08/07" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" cls="even" orival="1" oripropertyval="" class="isMinimumStay blue-color" tabindex="1" >1</td>
+              <td date="2017/08/08" roomtypecode="RT01" rateplancode="RP01" status="1" roomstatus="1" orival="1" oripropertyval="" class="isMinimumStay" tabindex="1" >1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button class="gbtn">Confirm Restrictions</button>
+  </div>
+  <div class="btn_area">
+    <p class="paragraph_1  s1_info">Any issues? <a class="text_link">Contact Support</a></p>
+  </div>
+</div>
+</body>
+</html>
